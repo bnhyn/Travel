@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Travel And Tour Management System</title>
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+<body>
+  <div class="bg-image"></div>
+  <section>
+    <div class="imagebox"></div>
+    <div class="content"> 
+      <h1>REGISTER</h1>
+      <ul>
+        <li><a href="https://www.facebook.com/" class="fa fa-facebook"></a></li>
+        <li><a href="https://twitter.com/i/flow/login" class="fa fa-twitter"></a></li>
+        <li><a href="https://accounts.google.com/v3/signin/identifier?dsh=S1896776611%3A1687277058348328&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F&ifkv=Af_xneHKLUYgsbhLFLAKp2TrtEPn0xd49988jwkVRZxgWCZt3UkMomNEK0YYpvK918NTxMZkoSDjCQ&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="fa fa-google"></a></li>
+      </ul>
+      <H2>or&nbsp;use&nbsp;your&nbsp;email&nbsp;account</H2>
+      <br>
+      <label for="username"></label>
+      <input type="username" id="usernameInput" placeholder="&#xf2bd;username" required>
+      <label for="email"></label>
+      <input type="email" id="emailInput" placeholder="&#128231;Email" required>
+      <label for="password"></label>
+      <input type="password" id="passwordInput" placeholder="&#x1F512;Password" required>
+      <label for="date"></label>
+      <input type="date" id="date" name="date">
+      <br><br>
+        <div class="row">
+          <input type="submit" onclick="validateForm()" value="Submit">
+          </div>
+          <br><br>
+          <a href="login.html" class="btn">already&nbsp;have&nbsp;a&nbsp;account?login</a>
+         </div>
+      </section>
+      <script>
+        function validateForm() {
+          var emailInput = document.getElementById("emailInput").value;
+          var passwordInput = document.getElementById("passwordInput").value;
+          var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(emailInput)) {
+        alert("Invalid email address!");
+        return;
+      }
+      if (passwordInput.length < 8) {
+        alert("Password must be at least 8 characters long!");
+        return;
+      }
+      var uppercaseRegex = /[A-Z]/;
+      if (!uppercaseRegex.test(passwordInput)) {
+        alert("Password must contain at least one uppercase letter!");
+        return;
+      }
+      window.location.href = "login.html";
+    }
+    </script>
+    </body>
+    </head>
+    </html>

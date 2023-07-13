@@ -1,0 +1,118 @@
+body,html{
+    height: 100%;
+    overflow: hidden;
+  }
+  *{
+    margin: 0px;
+    padding: 0px;
+    font-style: serif;
+    box-sizing: border-box;
+}
+.bg-image{
+  background-image: url(visitor-outer-bdg.png);
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(3px);
+}
+section{
+    border: 1px solid black;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 600px;
+    width: 1200px;
+    background:rgb(241, 240, 238);
+    display: flex;
+}
+.content{
+    width: calc(50% - 50%);
+    height: 600px;
+    box-sizing: border-box;
+    position: relative;
+    top: 80px;
+  
+  }
+  .imagebox{
+    border-top-left-radius:25px;
+    border-bottom-left-radius:25px ;
+    width: 600px;
+    height: 600px;
+    box-sizing: border-box;
+    background: url(inner\ bdg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+ul.li{
+    display: none;
+}
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+.fa {
+    font-size: 30px;
+    width: 60px;
+  }
+  .fa-facebook {
+   margin-left: 300px;
+    background: #3B5998;
+    color: white;
+  }
+  .fa-twitter {
+    margin-left: 250px;
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-google{
+    margin-inline-start: 300px;
+    background: #dd4b39;
+    color: white;
+  }
+  h2{
+    padding: 1px;
+    margin-left: 220px;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    color:rgb(107, 107, 107) ;
+  }
+input{
+    height: 40px;
+    width: 300px;
+    margin-left:185px ;
+    padding: 3px;
+}
+a.text{
+    padding: 0px;
+    margin-left: 350px;
+    color: rgb(122, 120, 120);
+    text-decoration: none;
+}
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    float: left;
+  }
+  a.btn{
+    color: rgb(80, 79, 79);
+    text-align: center;
+    padding: 0px;
+    margin: -244px;
+  }
+  h1{
+    color: rgb(54, 53, 53);
+    font-size: 30px;
+    margin-left: 284px;
+
+  }

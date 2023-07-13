@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Travel And Tour Management System</title>
+    <link rel="stylesheet" href="service.css">
+</head> 
+<body>
+    <div class="bg-image"></div>
+    <section>
+    <div class="imagebox">
+    </div>
+    <div class="content">
+     <div class="navbar">
+      <ul>
+        <li><a href="index.html">About us</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="#" class="active">Service</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        <br><br><br><br>
+        <h2>What We Serve</h2>
+        <h3>Top Values For You&#128293;</h3>
+        <br>
+        <div class="media-scroller">
+          <div class="media-elements">
+            <img class="img1" src="globe.png">
+            <p class="title">Lots&nbsp;of&nbsp;Choices</p>
+            <p></p><br>
+          </div>
+          <br>
+          <div class="media-elements">
+            <img class="img1" src="guide.png">
+            <p class="title">Best&nbsp;Tour&nbsp;Guides</p>
+            <p></p><br>
+          </div>
+          </div>
+          <div class="media-scroller">
+            <div class="media-elements">
+              <img class="img1" src="booking.png">
+              <p class="title">Easy&nbsp;Booking</p>
+              <p></p><br>
+            </div>
+            <br>
+            <div class="media-elements">
+              <img class="img1" src="security.png">
+              <p class="title">Security&nbsp;Relief</p>
+              <p></p><br>
+            </div>
+            </div>
+            <div class="media-scroller">
+              <div class="media-elements">
+                <img class="img1-only" src="star.png">
+                <p class="title">Trusted&nbsp;Ratings</p>
+                <p></p><br>
+              </div>
+              <br>
+              <div class="media-elements">
+                <img class="img1" src="cancellation.png">
+                <p class="title">24&nbsp;hr&nbsp;cancelation</p>
+                <p></p><br>
+              </div>
+              </div>
+       </ul> 
+     </div>
+    </div>
+    </section>
+    <script>
+      var navLinks = document.querySelectorAll("nav a");
+       navLinks.forEach(function(link) {
+        link.addEventListener("click", function() {
+          navLinks.forEach(function(link) {
+            link.classList.remove("active");
+          });
+          this.classList.add("active");
+        });
+      });
+         </script>
+</body>
+</html>

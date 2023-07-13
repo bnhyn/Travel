@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Travel And Tour Management System</title>
+  <link rel="stylesheet" href="trips.css">
+</head>
+<body>
+  <div class="bg-image"></div>
+  <section>
+    <div class="imagebox"> 
+    </div>
+    <div class="content">
+      <div class="navbar">
+        <ul>
+          <!--sticky-->
+          <li><a href="index.html">About us</a></li>
+          <li><a href="#" class="active">Trips</a></li>
+          <li><a href="service.html">Service</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+          <br><br><br><br>
+          <h2>TOP DESTINATION &#11088;</h2>
+          <h3>Explore your destination &#128747;</h3>
+        </ul>
+      </div>
+      <br>
+      <!--/sticky-->
+      <div class="media-scroller">
+        <div class="media-elements">
+          <a href="login.html"><img class="img" src="image/04.jpg"></a>
+          <p class="title">Sandakpur</p>
+        </div>
+        <div class="media-elements">
+          <a href="login.html"><img class="img" src="image/kathmandu.jpeg"></a>
+          <p class="title">Kathmandu</p>
+        </div>
+        <div class="media-elements">
+          <a href="login.html"><img class="img" src="image/ilam.jpeg"></a>
+          <p class="title">Ilam</p>
+        </div>
+        <div class="media-elements">
+          <a href="login.html"><img class="img" src="image/dolpo-trek.jpg"></a>
+          <p class="title">Dolpa</p>
+        </div>
+        <div class="media-elements">
+          <a href="login.html"><img class="img" src="image/gokyo.jpg"></a>
+          <p class="title">Gokyo</p>
+        </div>
+      </div>
+      <div class="media-scroller">
+        <div class="media-elements">
+          <a href="login.html"><img class="img" src="image/POKHARA.jpg"></a>
+          <p class="title">Pokhara</p>
+        </div>
+        <div class="media-elements">
+          <a href="login.html"><img class="img" src="image/Hand-Luggage-Only-6-2.webp"></a>
+          <p class="title">Mustang</p>
+        </div>
+        <div class="media-elements">
+          <a href="login.html"><img class="img" src="image/pachthar.jpeg"></a>
+          <p class="title">Pachthar</p>
+        </div>
+        <div class="media-elements">
+          <a href="login.html"><img class="img" src="image/chitwan.jpg"></a>
+          <p class="title">Chitwan</p>
+        </div>
+        <div class="media-elements">
+          <a href="login.html"><img class="img" src="image/ebc-trekking-in-nepal-1200x1200.jpg"></a>
+          <p class="title">EBC-Trek</p>
+        </div>
+      </div>
+  </section>
+  <script>
+    var navLinks = document.querySelectorAll("nav a");
+    navLinks.forEach(function (link) {
+      link.addEventListener("click", function () {
+        navLinks.forEach(function (link) {
+          link.classList.remove("active");
+        });
+        this.classList.add("active");
+      });
+    });
+  </script>
+</body>
+</html>

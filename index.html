@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Travel And Tour Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+    <div class="bg-image"></div>
+    <section>
+    <div class="imagebox">  
+    </div>
+    <div class="content"></div>
+     <div class="navbar">
+      <ul>
+        <li><a href="#" class="active" >About us</a></li>
+        <li><a href="trips.html" >Trips</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        <br><br><br><br>
+        <h2>Explore The World &#127758;</h2>
+        <h3>K Travels</h3>
+        <p class="about-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <br><br>
+        <a href="login.html" class="button">Get started &#8594;</a>
+       </ul> 
+      </div>
+    </div>
+  </section>
+</body>
+<script>
+  var navLinks = document.querySelectorAll("navbar a");
+   navLinks.forEach(function(link) {
+    link.addEventListener("click", function() {
+      navLinks.forEach(function(link) {
+        link.classList.remove("active");
+      });
+      this.classList.add("active");
+    });
+  });
+     </script>
+</html>

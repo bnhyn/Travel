@@ -1,0 +1,152 @@
+body,html{
+    height: 100%;
+    overflow: hidden;
+  }
+  *{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .bg-image{
+    background-image: url(visitor-outer-bdg.png);
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(3px);
+  
+  }
+  section{
+    border: 1px solid black;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 600px;
+    width: 1200px;
+    background:rgb(241, 240, 238);
+    display: flex;
+  }
+  .content{
+    width: calc(50% - 50%);
+    height: 100%;
+    box-sizing: border-box;
+  
+  }
+  .imagebox{
+    border-top-left-radius:25px;
+    border-bottom-left-radius:25px ;
+    width: calc(50% + 50%);
+    height: 100%;
+    box-sizing: border-box;
+    background: url(inner\ bdg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+  }
+  .logo{
+    height: 100px;
+    width: 80px;
+    margin-left: 250px;
+    padding: 0px;
+    position: absolute;
+    cursor: pointer;
+  }
+  h1{
+    font-size:  20px;
+    padding:0px;
+    margin-top: 130px;
+    margin-left: 20px;
+    color: aliceblue;
+    position: absolute;
+  }
+  p1{
+    font-size:  12px;
+    padding: 0px;
+    margin-top: 150px;
+    margin-left: 22px;
+    color: aliceblue;
+  }
+  .navbar{
+    width: 100% ;
+    margin: 0px;
+    padding: 20px 0;
+    display: flex;
+    align-items:top ;
+    justify-content: space-between;
+  }
+  nav a.active {
+    font-weight: bold;
+    color: rgb(160, 86, 86);
+  }
+  .navbar ul li{
+    display: inline;
+    margin: 0 40px;
+  }
+  .navbar ul li a{
+    text-decoration: none;
+    color: black;
+  }
+  .navbar ul li a:hover {
+    border-bottom: 3px solid red;
+  }
+  .navbar a.active {
+    font-weight: bold;
+    color: rgb(237, 64, 64);
+  }
+  h2{
+    display: inline-block;
+    background: rgb(247, 225, 247);
+    color: black;
+    font-size:  10px;
+    padding:0px;
+    margin-left: 20px;
+    position: center;
+    border-radius: 35px;
+  }
+  h3{
+    font-size: 30px;
+    padding: 0px;
+    margin-left: 18px;
+  }
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    resize: vertical;
+  }
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 140px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    float: bottom;
+  }
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  .col-25 {
+    float: left;
+    width: 55%;
+    margin-left: 15px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 55%;
+    margin-left: 15px;
+  }
+  
+  
+
+  

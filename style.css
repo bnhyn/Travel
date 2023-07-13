@@ -1,0 +1,136 @@
+body,html{
+  height: 100%;
+  overflow: hidden;
+}
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.bg-image{
+  background-image: url(visitor-outer-bdg.png);
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(3px);
+
+}
+section{
+  border: 1px solid black;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 600px;
+  width: 1200px;
+  background:rgb(241, 240, 238);
+  display: flex;
+}
+.content{
+  width: calc(50% - 50%);
+  height: 100%;
+  box-sizing: border-box;
+  background: white;
+
+}
+.imagebox{
+  border-top-left-radius:25px;
+  border-bottom-left-radius:25px ;
+  width: calc(50% + 50%);
+  height: 100%;
+  box-sizing: border-box;
+  background: url(inner\ bdg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+}
+h1{
+  font-size:  20px;
+  padding:0px;
+  margin-top: 130px;
+  margin-left: 20px;
+  color: aliceblue;
+  position: absolute;
+}
+p1{
+  font-size:  12px;
+  padding: 0px;
+  margin-top: 150px;
+  margin-left: 22px;
+  color: aliceblue;
+}
+.navbar{
+  width: 100% ;
+  margin: 0px;
+  padding: 20px 0;
+  display: flex;
+  align-items:top ;
+  justify-content: space-between;
+}
+.navbar ul li{
+  display: inline;
+  margin: 0 40px;
+  list-style: none;
+}
+.navbar ul li a{
+  text-decoration: none;
+  color: black;
+}
+.navbar ul li a:hover {
+  border-bottom: 3px solid red;
+}
+.transform{
+  text-decoration-color:red;
+}
+.navbar a.active {
+  font-weight: bold;
+  color: rgb(237, 64, 64);
+}
+h2{
+  display: inline-block;
+  background: rgb(247, 225, 247);
+  color: black;
+  font-size:  10px;
+  padding:0px;
+  margin-left: 20px;
+  position: center;
+  border-radius: 35px;
+}
+h3{
+  font-size:  30px;
+  padding: 0px;
+  margin-left: 18px;
+  position: center;
+}
+p{
+  font-size: 20px;
+  padding: 0px;
+  margin-left: 20px;
+}
+.button{
+  display:inline-block;
+  background: #3e88ef;
+  color: #eee8e8;
+  padding: 8px 10px;
+  margin:  0px 150px;
+  border-radius: 30px;
+  position: absolute; 
+  cursor: pointer; 
+}
+.button{
+  text-decoration: none;
+  color: black;
+}
+.button:hover {
+  background-color:#f00e0a;
+  transition: 0.7s;
+}
+.about-desc{
+  color: gray;
+  margin-top: 1em;
+}
+

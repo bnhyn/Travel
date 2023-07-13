@@ -1,0 +1,343 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+    }
+    a{
+        text-decoration: none;
+    } 
+    .top-nav{
+    display: inline-flex;
+    align-items: center;
+    gap: 290px;
+    position: relative;
+    top: 39px;
+    } 
+    .logo{
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    }
+    .logo-img{
+    width: 58px;
+    height: 40px;
+    }  
+    .Ktravels{
+    font-size: 30.54px;
+    font-family: var(--font-family-poppins);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: rgba(0, 0, 0, 0.80);
+    }
+    .main-nav{
+    display: flex;
+    padding: 14px 0px;
+    align-items: center;
+    gap: 42px;
+    border-top: 1px solid var(--box-colar, rgba(225, 211, 211, 0.87));
+    border-bottom: 1px solid var(--box-colar, rgba(225, 211, 211, 0.87));
+    }
+    .main-nav-div{
+     display: flex;
+    align-items: center;
+    gap: 6px;
+    } 
+    .main-nav-logo{
+        width: 30px;
+        height: 30px; 
+    }
+    .main-nav-text{
+        color: rgba(0, 0, 0, 0.80);
+        font-size: 20px;
+        font-family: var(--font-family-poppins);
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .top-rightside-nav{
+    display: flex;
+    align-items: center;
+    gap: 33px;
+    }
+    .bell-n-love{
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    }
+    .topside-profile{
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    background: url(Ellipse\ 51.png), lightgray 0px -0.89px / 100% 160.026% no-repeat;
+    }
+    .bell{
+        width: 30px;
+    height: 30px;
+    }
+    .fav{
+    width: 30px;
+    height: 30px;
+    }
+    .profile-bdg{
+    width: 100vw;
+    height: 448px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 180px;
+    }
+    .bdg-img-part{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 17px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        position: relative;
+        top: 260px;
+    }
+    .booking-section{
+        color: #000;
+        font-family: 'Poppins',sans-serif;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        position: relative;
+        top: 540px;
+    }
+    .profile-nav{
+        display: inline-flex;
+        align-items: center;
+        gap: 60px; 
+        position: relative;
+        top: 585px;
+        right: 335px;
+       
+    }
+    .profile-nav-border{
+        display: flex;
+    padding: 2px 37px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 40px;
+    border: 1px solid var(--box-colar, rgba(225, 211, 211, 0.87)); 
+    }
+
+    .profile-nav-border-only{
+        display: flex;
+    padding: 2px 37px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 40px;
+    background: var(--button, #0098C9);
+    } 
+    .profile-navigations{
+        display: flex;
+    align-items: center;
+    gap: 6px;
+    }
+    .profile-nav-logo{
+        width: 24px;
+    height: 24px;
+    }
+    .profile-nav-text{
+        color: rgba(0, 0, 0, 0.80);
+        font-size: 22px;     
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;  
+    }
+    .profile-nav-text-only{
+        color: white;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;  
+    }
+    .left-side{
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        position: relative;
+        top: 650px;
+        right: 400px;
+    }
+    .top-left{
+        display: flex;
+        padding: 34px 60px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        background: var(--box-footer, #E7F7F9);
+    }
+    .bottom-left{
+        display: flex;
+        padding: 34px 92px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px; 
+        background: var(--box-footer, #E7F7F9);
+    }
+    .e-wallet{
+        color: #000;
+        font-family: Poppins;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .payment-images{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+    .or{
+        color: #000;
+        font-family: 'Poppins',sans-serif;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .right-side{
+        display: inline-flex;
+        padding: 24px 82px;
+        flex-direction: column;
+        align-items: center;
+        gap: 0px; 
+        background: var(--box-footer, #E7F7F9);
+        position: relative;
+        left: 270px;
+        top: 74px;
+    }
+    .your-ticket-overview{
+        color: rgba(0, 0, 0, 0.80);
+        font-family: Poppins;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;  
+        margin-bottom: -1em;
+    }
+    .ticket{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0px;
+    }
+    .ticket-info{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .trip-img{
+        display: flex;
+        width: 153px;
+        height: 120px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px; 
+        border-radius: 40px;
+    }
+    .trip-name-info{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0px;
+        margin-top: 2rem;
+    }
+    .trip-name{
+        color: rgba(0, 0, 0, 0.80);
+        font-family: Inter;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-top: 3rem;
+        margin-bottom: 0rem;    
+    }
+    .trip-date-place{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0rem;
+        margin-bottom: 3em;
+    }
+    .trip-part{
+        display: flex;
+        padding-left: 0px;
+        align-items: center;
+        gap: 4px;
+    }
+    .trip-part-second{
+        display: flex;
+        padding-left: 0px;
+        align-items: center;
+        gap: 6px;
+        
+    }
+    .from-to{
+        color: rgba(0, 0, 0, 0.80);
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .from-to-second{
+        color: rgba(0, 0, 0, 0.80);
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: -1rem;
+    }
+    .moned-paid{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 0px; 
+    }
+    .ticket-expn{
+        display: flex;
+        align-items: center;
+        gap: 362px;
+    }
+    .expn{
+        color: #000;
+        font-family: Inter;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;     
+    }
+    .money{
+        color: #000;
+        font-family: Inter;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;   
+    }
+    .ticket-total{
+        display: flex;
+        align-items: center;
+        gap: 420px;
+    }
+    .total{
+        color: #000;
+        font-family: Poppins;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    .location-logo{
+        margin-bottom: 2.5rem;
+    }

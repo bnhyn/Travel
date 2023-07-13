@@ -1,0 +1,120 @@
+body,html{
+  height: 100%;
+  overflow: hidden;
+}
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.bg-image{
+  background-image: url(visitor-outer-bdg.png);
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(3px);
+}
+section{
+  border: 1px solid black;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 600px;
+  width: 1200px;
+  background:rgb(241, 240, 238);
+  display: flex;
+}
+.imagebox{
+  border-top-left-radius:25px;
+  border-bottom-left-radius:25px ;
+  width: 600px;
+  height: 600px;
+  box-sizing: border-box;
+  background: url(inner\ bdg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+}
+.content{
+  width: 600px;
+  height: 600px;
+  box-sizing: border-box;
+  display: flex;
+}
+.navbar{
+  margin: 0px;
+  padding: 20px 0;
+  display: flex;
+  align-items:top ;
+  justify-content: space-between;
+}
+.navbar ul li{
+  display: inline;
+  margin: 0 40px;
+}
+.navbar ul li a{
+  text-decoration: none;
+  color: black;
+}
+.navbar ul li a:hover {
+  border-bottom: 3px solid red;
+}
+.navbar a.active {
+  font-weight: bold;
+  color: rgb(237, 64, 64);
+}
+h2{
+  display: inline-block;
+  background: rgb(244, 222, 244);
+  color: black;
+  font-size:  10px;
+  padding: 0px;
+  margin-left: 20px;
+  position: center;
+  border-radius: 35px;
+}
+h3{
+  color: black;
+  font-size:  30px;
+  padding: 0px;
+  margin-left: 18px;
+  position: center;
+}
+.media-scroller{
+  display: grid;
+  gap: var(--size-2);
+  grid-auto-flow: column;
+  grid-auto-columns: 20%;
+  margin-left: 100px;
+}
+img{
+  height: 100px;
+  width: 76px;
+}
+p{
+  padding: 0px;
+  margin-left:-25px;
+  color: rgb(65, 64, 64);
+}
+.img5{
+    height:30px ;
+    width: 105px;
+    margin-top: 21px;
+    margin-left: -26px;
+    background: rgb(241, 240, 238);
+}
+img.img1{
+  height: 35px;
+  width: 40px;
+  margin-top: 20px;
+}
+.img1-only{
+  height: 35px;
+  width: 85px;
+  margin-top: 20px;
+}
