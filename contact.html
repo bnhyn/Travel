@@ -22,9 +22,9 @@
         <h3>Contact Us</h3>
         <br>
         <div>
-          <form>
+          <form id="submissionForm">
               <div class="col-75">
-                <input type="text" id="fname" name="fullname" placeholder="&#128395;Full Name">
+                <input type="text" id="name" name="name" placeholder="&#128395; Name">
               </div>
               <div class="col-75">
                 <br>
@@ -32,11 +32,10 @@
               </div>           
               <div class="col-75">
                 <br>
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-              </div>
-              <div class="col-75">
-                <br>
-                <input type="submit" value="Submit">
+                <label for="submission"></label>
+               <textarea id="submission" required></textarea><br><br>
+
+               <input type="submit" value="Submit">
               </div>
           </form>
         </div>
@@ -52,6 +51,22 @@
       this.classList.add("active");
     });
   });
+
+  document.getElementById('submissionForm').addEventListener('submit', function (e) {
+    e.preventDefault(); 
+
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var submission = document.getElementById('submission').value;
+
+    var subject = 'Submission from ' + name;
+    var body = 'Name: ' + name + '\n' +
+               'Email: ' + email + '\n' +
+               'Submission: ' + submission;
+
+    window.location.href = 'mailto:hisokafreak4@gmail.com' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+});
+
      </script>
     </section>
 </body>
